@@ -1,1 +1,1 @@
-https://github.com/yunusokur0/Game/assets/114630722/63950df8-3cf0-41de-8a13-b85057608dcc
+https://github.com/yunusokur0/Game/assets/114630722/40ea88d7-1b9c-40cd-bb00-4d6ee61d31a5
