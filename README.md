@@ -1,3 +1,1 @@
-
-https://github.com/yunusokur0/Game/assets/114630722/3e173c46-0d19-42c9-bc51-b288915944ac
-Uploading CUP.mp4…
+https://github.com/yunusokur0/Game/assets/114630722/63950df8-3cf0-41de-8a13-b85057608dcc
