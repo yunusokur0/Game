@@ -46,10 +46,7 @@ public int lastListIndex;
 
     private void PlatformSpawn(byte level)
     {
-        //es.Clear();
-        //es1.Clear();
         counter1 = 1;
-        //counter2 = 51;
         var resourceRequest = Resources.LoadAsync<GameObject>($"LevelPrefabs/level {0}");
         resourceRequest.completed += operation =>
         {
@@ -75,7 +72,6 @@ public int lastListIndex;
             counter1++;
         }
 
-        //SpawnNumanObjects();
     }
 
     private List<GameObject> ChooseList()
@@ -98,111 +94,6 @@ public int lastListIndex;
         lastListIndex = listIndex;
         return listIndex == 0 ? pl1 : pl2;
     }
-
-    //void SpawnNumanObjects()
-
-    //{
-    //    for (int i = 0; i < 3; i++)
-    //    {
-    //        for(int j = 0; j<4; j++)
-    //        {
-    //            GameObject numanObj;
-    //            numanObj = Instantiate(pl1[Random.Range(0, 3)]);
-    //            numanObj.SetActive(false);
-    //            numanObj.transform.SetParent(_levelHolder.transform);
-    //            es.Add(numanObj);
-    //        }
-
-    //    }
-
-    //    for (int i = 0; i < 3; i++) 
-    //    {
-    //        for (int j = 0; j < 4; j++)
-    //        {
-    //            GameObject numanObj;
-    //            numanObj = Instantiate(pl2[Random.Range(0, 3)]);
-    //            numanObj.SetActive(false);
-    //            numanObj.transform.SetParent(_levelHolder.transform);
-    //            es1.Add(numanObj);
-    //        }
-
-    //    }
-
-    //    for (int j = 0; j < 3; j++)
-    //    {
-    //        GameObject numanObj;
-    //        numanObj = Instantiate(pl2[Random.Range(3, 4)]);
-    //        numanObj.SetActive(false);
-    //        numanObj.transform.SetParent(_levelHolder.transform);
-    //        es1.Add(numanObj);
-    //    }
-
-    //    for (int j = 0; j < 1; j++)
-    //    {
-    //        GameObject numanObj;
-    //        numanObj = Instantiate(pl2[Random.Range(4, 5)]);
-    //        numanObj.SetActive(false);
-    //        numanObj.transform.SetParent(_levelHolder.transform);
-    //        es.Add(numanObj);
-    //    }
-    //}
-   
-    //private void Update()
-    //{
-    //    if (es.Exists(obj => !obj.activeSelf) && !isCoroutineRunning && es.Count > 10)
-    //    {
-    //        StartCoroutine(ActivateAndMoveDown());
-    //        isCoroutineRunning = true;
-    //    }
-    //}
-
-    //IEnumerator ActivateAndMoveDown()
-    //{
-    //    isCoroutineRunning = true;
-    //    while (es.Count > 0 || es1.Count > 0) 
-    //    {
-    //        List<GameObject> deactiveChildren = lists[currentListIndex].FindAll(child => !child.activeSelf);
-
-    //        if (deactiveChildren.Count == 0)
-    //        {
-    //            currentListIndex = 1 - currentListIndex;
-    //            listSelectCount = 0;
-    //            continue;
-    //        }
-
-    //        int randomIndex = Random.Range(0, deactiveChildren.Count);
-    //        GameObject childToActivate = deactiveChildren[randomIndex];
-    //        childToActivate.SetActive(true);
-
-    //        childToActivate.transform.position = new Vector3(
-    //            childToActivate.transform.position.x,
-    //            yPos,
-    //            childToActivate.transform.position.z
-    //        );
-
-    //        yPos -= 9f;
-
-    //        TextMeshPro textMesh = childToActivate.GetComponentInChildren<TextMeshPro>();
-    //        if (textMesh != null)
-    //        {
-    //            textMesh.text = counter2.ToString();
-    //        }
-
-    //        lists[currentListIndex].Remove(childToActivate);
-
-    //        listSelectCount++;
-    //        if (listSelectCount >= 2)
-    //        {
-    //            currentListIndex = 1 - currentListIndex; 
-    //            listSelectCount = 0;
-    //        }
-
-    //        yield return new WaitForSeconds(0.5f);
-    //        counter2++;
-    //    }
-    //    isCoroutineRunning = false;
-    //}
-
     private void OnEnable()
     {
         SubscribeEvents();
