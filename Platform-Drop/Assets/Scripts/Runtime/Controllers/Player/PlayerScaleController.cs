@@ -12,7 +12,6 @@ public class PlayerScaleController : MonoBehaviour
             if (_isReadyToMove)
             {
                 transform.DOScale(new Vector3(3.25f, 0.4f, 3.25f), .15f);
-                //transform.DOScale(new Vector3(0.9416608f, 1f, 0.05053665f), .15f);
             }
 
             else  if (!_isReadyToMove)
