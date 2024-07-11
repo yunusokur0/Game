@@ -13,9 +13,6 @@ public class PlayerPlatform : MonoBehaviour
             {
                 textMesh.color = color; 
             }
-            //other.gameObject.SetActive(false);
-
-            //CoreGameSignals.Instance.ss?.Invoke(other.gameObject);
         }
     }
 }
