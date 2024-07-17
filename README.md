@@ -4,6 +4,4 @@ https://github.com/yunusokur0/Game/assets/114630722/40ea88d7-1b9c-40cd-bb00-4d6e
 
 Platform Drop Video:
 
-https://github.com/user-attachments/assets/e20576e4-5ee0-4517-bb4e-d9aa2481e89c
-
-
+https://github.com/user-attachments/assets/e7fc8a36-793e-4dc3-be8f-0c86e19afa15
