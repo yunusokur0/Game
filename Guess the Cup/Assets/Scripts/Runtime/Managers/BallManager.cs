@@ -9,7 +9,6 @@ public class BallManager : MonoBehaviour
     {
         int selectedIndex = Random.Range(0, cupsManager.cupList.Count);
         GameObject selectedObj = cupsManager.cupList[selectedIndex];
-
         Vector3 ballPosition = selectedObj.transform.position;
         ballPosition.y = 5.75f;
         ball.transform.position = ballPosition;
