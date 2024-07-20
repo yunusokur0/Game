@@ -9,7 +9,7 @@ public class CameraManager : MonoBehaviour
     public Vector3 _firstPosition;
     public Quaternion _firstRotation;
 
-
+//
     public void RotateToFaceDown()
     {
         transform.DOShakeRotation(1f, 2f).OnComplete(() =>
